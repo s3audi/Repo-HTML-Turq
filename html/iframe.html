@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>PDFs?</title>
+    <style>
+      iframe {
+        display: inline-block;
+        width: 88vw;
+        height: 90%;
+      }
+      #html {
+        float: left;
+      }
+      #pdf {
+        float: right;
+      }
+    </style>
+  </head>
+
+
+
+
+
+  <body>
+
+  <h1>Create Textbox element using JavaScript</h1>
+    <script>
+      const input = document.createElement("input");
+      input.setAttribute("type", "text");
+      document.body.appendChild(input);
+    </script>
+
+    <p>
+<input id="websitem"></input>
+<script>    
+var websitem = 'other.html';
+</script> 
+
+
+<p>
+      The "Git Internals" pdf is provided under the Creative Commons
+      Attribution-ShareAlike license by Scott Chacon and Pluralsight, and is
+      available
+      <a href="https://github.com/pluralsight/git-internals-pdf">on GitHub</a>.
+    </p>
+    <iframe id="html" src=""></iframe>
+    <!--<iframe id="pdf" src=""></iframe>
+    -->
+<!-- Script2 olmazsa iframe gelmiyor-->    
+ <script src="../js/script2.js"></script>
+  </body>
+</html>

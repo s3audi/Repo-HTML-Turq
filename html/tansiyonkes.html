@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Lato', sans-serif;
+      }
+
+      /* Style the tab */
+      .tab {
+        float: left;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+        width: 20%;
+        height: 500px;
+      }
+
+      /* Style the buttons inside the tab */
+      .tab button {
+        display: block;
+        background-color: inherit;
+        color: black;
+        padding: 22px 16px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: right;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 17px;
+      }
+
+      /* Change background color of buttons on hover */
+      .tab button:hover {
+        background-color: orange;
+        height: 20%;
+      }
+
+      /* Create an active/current "tab button" class */
+      .tab button.active {
+        background-color: #ffc67c;
+      }
+
+      /* Style the tab content TÜM NUMARALAR BURADA */
+      .tabcontent {
+        margin: 0px 0px 0px 0px;
+        overflow: hidden;
+        float: left;
+        padding: 0px 12px;
+        border: 1px solid #ccc;
+        width: 78%;
+        border-left: none;
+        height: 1200px;
+      }
+
+      /* Style the KAYDIRMA YAPIYORUZ  VEEEEE */
+
+      .tabcontent iframe {
+        margin: 0px 0px 0px 0px;
+        overflow: hidden;
+      }
+
+      .tabcontent iframeIPTAL {
+        margin: -200px 0px 0px 0px;
+        overflow: hidden;
+      }
+
+      /* Style the YANYANA DIVLER */
+      #dis_bolme {
+        width: 800px;
+
+        height: 120px;
+
+        background-color: white;
+      }
+
+      .ic_bolme {
+        float: left;
+
+        width: 350px;
+
+        height: 100px;
+
+        border: #ccc solid 0px;
+
+        background-color: white;
+
+        margin-right: 10px;
+
+        margin-left: 20px;
+      }
+
+      #Hamburg iframe {
+        width: 200px;
+        height: 100px;
+        float: left;
+        margin: 0 20px 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="dis_bolme">
+      <div class="ic_bolme">
+        <p></p>
+        <a href="https://www.tansiyon.com.tr"
+          ><img
+            src="https://www.tansiyon.com.tr/wp-content/uploads/2019/07/logo23.png"
+            alt="Tansiyon Mobil Sağlık"
+        /></a>
+      </div>
+
+      <div class="ic_bolme">
+        <h2>Tansiyon Mobil Sağlık</h2>
+        <p>Sağlıklı günler dileriz.</p>
+      </div>
+
+      <!-- <div class="ic_bolme">Bölme3</div> -->
+    </div>
+
+    <div class="tab">
+      <button
+        class="tablinks"
+        onclick="openCity(event, 'London')"
+        id="defaultOpen"
+      >
+        🍒Firma Kayıt
+      </button>
+      <button class="tablinks" onclick="openCity(event, 'Tokyo')">
+        🍒Firma Liste
+      </button>
+      <button class="tablinks" onclick="openCity(event, 'Paris')">
+        🥝Rapor Kayıt
+      </button>
+      <!--
+      <button class="tablinks" onclick="openCity(event, 'Hamburg')">
+        Şifre Talep Formu
+      </button>
+    -->
+
+      <button class="tablinks" onclick="openCity(event, 'Istanbul')">
+        🥝Rapor Liste
+      </button>
+
+      <button class="tablinks" onclick="openCity(event, 'Ankara')">
+        💦Şifre Link
+      </button>
+      <!--
+      <button class="tablinks" onclick="openCity(event, 'Antalya')">
+        Bilgilendirme
+      </button>
+    --></div>
+
+    <div id="London" class="tabcontent">
+      <iframe
+        class="airtable-embed"
+        frameborder="0"
+        height="1250px"
+        onmousewheel=""
+        src="https://airtable.com/embed/shrs3aUNaXDk8ZIFS?backgroundColor=yellow"
+        style="background: transparent; border: 1px solid #ccc"
+        width="100%"
+      ></iframe>
+    </div>
+
+    <!--
+   <div id="London" class="tabcontent">
+      <iframe
+        class="airtable-embed"
+        src="https://airtable.com/embed/shr1XAfcHG3PrSH1L?backgroundColor=gray&viewControls=on"
+        frameborder="0"
+        onmousewheel=""
+        width="100%"
+        height="533"
+        style="background: transparent; border: 1px solid #ccc"
+      ></iframe>
+    </div>
+   -->
+
+    <div id="Paris" class="tabcontent">
+      <iframe
+        class="airtable-embed"
+        frameborder="0"
+        height="1150px"
+        onmousewheel=""
+        src="https://airtable.com/embed/shrG0jHWkbIXhJxgg?backgroundColor=yellow"
+        style="background: transparent; border: 1px solid #ccc"
+        width="100%"
+      ></iframe>
+    </div>
+
+    <div id="Hamburg" class="tabcontent" style="height: 800px">
+      <iframe
+        class="airtable-embed"
+        frameborder="0"
+        height="1100px"
+        onmousewheel=""
+        src="https://airtable.com/embed/shrTAP7rq2IlxI5bT?backgroundColor=yellow"
+        style="background: transparent; border: 1px solid #ccc"
+        width="100%"
+      ></iframe>
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+      <iframe
+        class="airtable-embed"
+        frameborder="0"
+        height="1200px"
+        onmousewheel=""
+        src="https://airtable.com/embed/shrTABheYgVJODBrc?backgroundColor=yellow&viewControls=on"
+        style="background: transparent; border: 1px solid #ccc"
+        width="100%"
+      ></iframe>
+    </div>
+
+    <div id="Istanbul" class="tabcontent">
+      <iframe
+        class="airtable-embed"
+        frameborder="0"
+        height="1200px"
+        onmousewheel=""
+        src="https://airtable.com/embed/shrE6HmDM0oqvF99V?backgroundColor=yellow&viewControls=on"
+        style="background: transparent; border: 1px solid #ccc"
+        width="100%"
+      ></iframe>
+    </div>
+
+    <div id="Ankara" class="tabcontent">
+      <iframe
+        class="airtable-embed"
+        src="https://airtable.com/embed/shrd3Tv6Q3fcuFj84?backgroundColor=yellow&viewControls=on"
+        frameborder="0"
+        onmousewheel=""
+        width="100%"
+        height="1533"
+        style="background: transparent; border: 1px solid #ccc"
+      ></iframe>
+    </div>
+
+    <div id="Antalya" class="tabcontent">
+      <div
+        style="
+          position: relative;
+          width: 100%;
+          height: 0;
+          padding-top: 56.25%;
+          padding-bottom: 48px;
+          box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+          margin-top: 1.6em;
+          margin-bottom: 0.9em;
+          overflow: hidden;
+          border-radius: 8px;
+          will-change: transform;
+        "
+      >
+        <iframe
+          loading="lazy"
+          style="
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border: none;
+            padding: 0;
+            margin: 0;
+          "
+          src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEtAAzFt6g&#x2F;view?embed"
+        >
+        </iframe>
+      </div>
+      <a
+        href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEtAAzFt6g&#x2F;view?utm_content=DAEtAAzFt6g&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+        target="_blank"
+        rel="noopener"
+        >Tansiyon Bilgilendirme</a
+      >
+    </div>
+
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName('tabcontent');
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = 'none';
+        }
+        tablinks = document.getElementsByClassName('tablinks');
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(' active', '');
+        }
+        document.getElementById(cityName).style.display = 'block';
+        evt.currentTarget.className += ' active';
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById('defaultOpen').click();
+    </script>
+  </body>
+</html>
